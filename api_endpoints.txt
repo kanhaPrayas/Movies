@@ -1,3 +1,6 @@
+=====Content type should be application/x-www-form-urlencoded======
+
+
 #Add new movies
 
 
