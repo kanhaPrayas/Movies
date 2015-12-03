@@ -1,0 +1,107 @@
+#Add new movies
+
+
+url : https://young-escarpment-9699.herokuapp.com/movies/v1/addmovies/
+
+request parameters:
+
+name=Tamashaa
+director=Imtiaz Ali
+genre=["drama"]
+imdb_score=8.9
+popularity=89.0
+email_id=kanha.prayas@gmail.com
+
+
+response:
+
+{
+r_code: "0"
+r_str: "New movie added successfully."
+r_det: {}
+}
+
+#Edit new movies
+
+
+url : https://young-escarpment-9699.herokuapp.com/movies/v1/editmovies/
+request parameters:
+
+name=Tamashaa
+director=Imtiaz Ali
+genre=["drama"]
+imdb_score=8.9
+popularity=89.0
+email_id=kanha.prayas@gmail.com
+id=1
+
+
+response:
+
+{
+r_code: "0"
+r_str: "Movie updated successfully."
+r_det: {}
+}
+
+#delete  movies
+
+
+url : https://young-escarpment-9699.herokuapp.com/movies/v1/deletemovies/
+
+request parameters:
+id=1
+email_id=kanha.prayas@gmail.com
+
+
+response:
+
+{
+r_code: "0"
+r_str: "Movie deleted Successfully."
+r_det: {}
+}
+
+
+#view movies
+
+url : https://young-escarpment-9699.herokuapp.com/movies/v1/movies/
+
+request parameters:
+name : tamasha
+
+
+response:
+
+{
+r_code: "0"
+r_str: "Movies received successfully."
+r_det: {
+movies: [3]
+0:  {
+genre: "["drama"]"
+popularity: 89
+imdb_score: 8.9
+name: "tamasha"
+director: "Imtiaz Ali"
+id: 2
+}-
+1:  {
+genre: "["drama"]"
+popularity: 89
+imdb_score: 8.9
+name: "Jab we met"
+director: "Imtiaz Ali"
+id: 3
+}-
+2:  {
+genre: "["drama"]"
+popularity: 89
+imdb_score: 8.9
+name: "Rock star"
+director: "Imtiaz Ali"
+id: 4
+}-
+-
+}-
+}
