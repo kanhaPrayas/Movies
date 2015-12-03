@@ -47,9 +47,6 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
-    #'ApiLogApp.apiLog.ApiLogMiddleware'
-    #'NotificationApp.emailEngine.EmailEngineMiddleware'
 )
 
 ROOT_URLCONF = 'Movies.urls'
